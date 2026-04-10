@@ -7,8 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-About Me
-======
 I am a 1st year doctoral student of Miyazaki Lab, Institute of Science Tokyo.  Before joining Miyazaki Lab, I obtained my bachelor degree in Dalian University of Technology, supervised by Prof. Weimin Wang. My research has been focusing on the large-scale point cloud processing algorithm acceleration with GPU & CPU.
 
 

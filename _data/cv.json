@@ -1,14 +1,14 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Ziyang Yu",
+    "email": "yu.ziyang.2001@gmail.com",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://supershrimp.github.io/",
+    "summary": "Currently employed at Institute of Science Tokyo. Student at Institute of Science Tokyo",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
+      "city": "Japan",
       "countryCode": "US",
       "region": ""
     },
@@ -16,46 +16,46 @@
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.co.jp/citations?user=ko4-GncAAAAJ&hl=ja&authuser=2"
       },
       {
         "network": "ORCID",
         "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/my-orcid?orcid=0009-0001-2240-4490"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "SuperShrimp",
+        "url": "https://github.com/SuperShrimp"
       }
     ]
   },
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "Institute of Science Tokyo",
+      "area": "Ph.D in Computer Science",
       "studyType": "",
       "startDate": "",
-      "endDate": "2018",
+      "endDate": "2028",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
+      "institution": "Institute of Science Tokyo",
+      "area": "M.S. in Computer Science",
       "studyType": "",
       "startDate": "",
-      "endDate": "2014",
+      "endDate": "2025",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
+      "institution": "Dalian University of Technology",
+      "area": "B.S. in Digital Media Technology",
       "studyType": "",
       "startDate": "",
-      "endDate": "2012",
+      "endDate": "2023",
       "gpa": null,
       "courses": []
     }
@@ -66,32 +66,18 @@
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Attribution-Based Scanline Perturbation Attack on 3d Detectors of Lidar Point Clouds",
+      "publisher": "In the proceedings of ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "releaseDate": "2024-01-01",
+      "website": "",
+      "summary": ""
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "FSAC-IA: A Hierarchical Constructed SAC-IA Algorithm for Point Cloud Alignment Acceleration",
+      "publisher": "In the proceedings of 2025 IEEE International Conference on Image Processing (ICIP)",
+      "releaseDate": "2025-01-01",
+      "website": "",
+      "summary": ""
     }
   ],
   "presentations": [

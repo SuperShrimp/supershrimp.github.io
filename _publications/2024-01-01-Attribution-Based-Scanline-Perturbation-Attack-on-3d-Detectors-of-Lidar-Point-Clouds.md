@@ -1,6 +1,7 @@
 ---
 title: "Attribution-Based Scanline Perturbation Attack on 3d Detectors of Lidar Point Clouds"
 collection: publications
+category: conferences
 permalink: /publication/2024-01-01-Attribution-Based-Scanline-Perturbation-Attack-on-3d-Detectors-of-Lidar-Point-Clouds
 date: 2024-01-01
 venue: 'In the proceedings of ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)'

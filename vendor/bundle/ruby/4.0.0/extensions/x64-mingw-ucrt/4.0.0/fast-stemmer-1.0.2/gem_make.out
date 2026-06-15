@@ -1,0 +1,20 @@
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/fast-stemmer-1.0.2/ext
+C:/Ruby40-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/fast-stemmer-1.0.2/ext
+make -j21 DESTDIR\= sitearchdir\=./.gem.20260615-31556-ylj16q sitelibdir\=./.gem.20260615-31556-ylj16q clean
+
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/fast-stemmer-1.0.2/ext
+make -j21 DESTDIR\= sitearchdir\=./.gem.20260615-31556-ylj16q sitelibdir\=./.gem.20260615-31556-ylj16q
+compiling porter.c
+generating stemmer-x64-mingw-ucrt.def
+compiling porter_wrap.c
+linking shared-object stemmer.so
+
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/fast-stemmer-1.0.2/ext
+make -j21 DESTDIR\= sitearchdir\=./.gem.20260615-31556-ylj16q sitelibdir\=./.gem.20260615-31556-ylj16q install
+/usr/bin/install -c -m 0755 stemmer.so ./.gem.20260615-31556-ylj16q
+
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/fast-stemmer-1.0.2/ext
+make DESTDIR\= sitearchdir\=./.gem.20260615-31556-ylj16q sitelibdir\=./.gem.20260615-31556-ylj16q clean

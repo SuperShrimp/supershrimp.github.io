@@ -11,3 +11,6 @@ end
 
 gem 'github-pages'
 gem 'connection_pool', '2.5.0'
+
+# Windows does not provide the Unix zoneinfo database that tzinfo expects.
+gem 'tzinfo-data'

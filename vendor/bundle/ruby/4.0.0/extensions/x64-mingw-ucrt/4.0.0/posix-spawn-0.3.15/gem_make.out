@@ -1,0 +1,18 @@
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/posix-spawn-0.3.15/ext
+C:/Ruby40-x64/bin/ruby.exe extconf.rb
+
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/posix-spawn-0.3.15/ext
+make -j21 DESTDIR\= sitearchdir\=./.gem.20260615-31556-sstw6m sitelibdir\=./.gem.20260615-31556-sstw6m clean
+make: *** ターゲット 'clean' を make するルールがありません.  中止.
+
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/posix-spawn-0.3.15/ext
+make -j21 DESTDIR\= sitearchdir\=./.gem.20260615-31556-sstw6m sitelibdir\=./.gem.20260615-31556-sstw6m
+make: 'default' に対して行うべき事はありません.
+
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/posix-spawn-0.3.15/ext
+make -j21 DESTDIR\= sitearchdir\=./.gem.20260615-31556-sstw6m sitelibdir\=./.gem.20260615-31556-sstw6m install
+make: 'install' に対して行うべき事はありません.
+
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/posix-spawn-0.3.15/ext
+make DESTDIR\= sitearchdir\=./.gem.20260615-31556-sstw6m sitelibdir\=./.gem.20260615-31556-sstw6m clean
+make: *** ターゲット 'clean' を make するルールがありません.  中止.

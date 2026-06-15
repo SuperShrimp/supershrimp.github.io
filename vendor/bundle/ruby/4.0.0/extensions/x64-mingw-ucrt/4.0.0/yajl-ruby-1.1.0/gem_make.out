@@ -1,0 +1,64 @@
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/yajl-ruby-1.1.0/ext/yajl
+C:/Ruby40-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/yajl-ruby-1.1.0/ext/yajl
+make -j21 DESTDIR\= sitearchdir\=./.gem.20260615-30688-7m5ulw sitelibdir\=./.gem.20260615-30688-7m5ulw clean
+
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/yajl-ruby-1.1.0/ext/yajl
+make -j21 DESTDIR\= sitearchdir\=./.gem.20260615-30688-7m5ulw sitelibdir\=./.gem.20260615-30688-7m5ulw
+generating yajl-x64-mingw-ucrt.def
+compiling yajl.c
+compiling yajl_alloc.c
+compiling yajl_buf.c
+compiling yajl_encode.c
+compiling yajl_ext.c
+compiling yajl_gen.c
+compiling yajl_lex.c
+compiling yajl_parser.c
+yajl_gen.c:215:9: warning: 'isnan' redefined
+  215 | #define isnan _isnan
+      |         ^~~~~
+In file included from yajl_gen.c:40:
+C:/Ruby40-x64/msys64/ucrt64/include/math.h:589:9: note: this is the location of the previous definition
+  589 | #define isnan(x) \
+      |         ^~~~~
+yajl_gen.c:216:9: warning: 'isinf' redefined
+  216 | #define isinf !_finite
+      |         ^~~~~
+C:/Ruby40-x64/msys64/ucrt64/include/math.h:512:9: note: this is the location of the previous definition
+  512 | #define isinf(x) (fpclassify(x) == FP_INFINITE)
+      |         ^~~~~
+compiling yajl_version.c
+yajl_ext.c: In function 'yajl_encode_part':
+yajl_ext.c:117:21: warning: variable 'status' set but not used [-Wunused-but-set-variable=]
+  117 |     yajl_gen_status status;
+      |                     ^~~~~~
+In file included from C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/dosish.h:38,
+                 from C:/Ruby40-x64/include/ruby-4.0.0/ruby/defines.h:78,
+                 from C:/Ruby40-x64/include/ruby-4.0.0/ruby/ruby.h:25,
+                 from C:/Ruby40-x64/include/ruby-4.0.0/ruby.h:38,
+                 from yajl_ext.h:32,
+                 from yajl_ext.c:24:
+yajl_ext.c: In function 'rb_yajl_parser_parse':
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/win32.h:207:14: warning: variable 'stati128' set but not used [-Wunused-but-set-variable=]
+  207 | #define stat stati128
+      |              ^~~~~~~~
+yajl_ext.c:442:17: note: in expansion of macro 'stat'
+  442 |     yajl_status stat;
+      |                 ^~~~
+In file included from C:/Ruby40-x64/include/ruby-4.0.0/ruby/ruby.h:27:
+yajl_ext.c: In function 'rb_yajl_encoder_enable_json_gem_ext':
+yajl_ext.c:852:22: error: 'rb_cFixnum' undeclared (first use in this function); did you mean 'rb_cFile'?
+  852 |     rb_define_method(rb_cFixnum, "to_json", rb_yajl_json_ext_fixnum_to_json, -1);
+      |                      ^~~~~~~~~~
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/anyargs.h:362:79: note: in definition of macro 'rb_define_method'
+  362 | #define rb_define_method(klass, mid, func, arity)           rb_define_method((klass), (mid), (VALUE (*)(ANYARGS))(func), (arity))
+      |                                                                               ^~~~~
+yajl_ext.c:852:22: note: each undeclared identifier is reported only once for each function it appears in
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/anyargs.h:362:79: note: in definition of macro 'rb_define_method'
+  362 | #define rb_define_method(klass, mid, func, arity)           rb_define_method((klass), (mid), (VALUE (*)(ANYARGS))(func), (arity))
+      |                                                                               ^~~~~
+make: *** [Makefile:250: yajl_ext.o] エラー 1
+
+make failed, exit code 2

@@ -1,0 +1,158 @@
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/redcarpet-2.3.0/ext/redcarpet
+C:/Ruby40-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/redcarpet-2.3.0/ext/redcarpet
+make -j21 DESTDIR\= sitearchdir\=./.gem.20260615-31556-akzkmu sitelibdir\=./.gem.20260615-31556-akzkmu clean
+
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/redcarpet-2.3.0/ext/redcarpet
+make -j21 DESTDIR\= sitearchdir\=./.gem.20260615-31556-akzkmu sitelibdir\=./.gem.20260615-31556-akzkmu
+generating redcarpet-x64-mingw-ucrt.def
+compiling autolink.c
+compiling buffer.c
+compiling houdini_href_e.c
+compiling houdini_html_e.c
+compiling html.c
+compiling html_smartypants.c
+compiling markdown.c
+compiling rc_markdown.c
+compiling rc_render.c
+compiling stack.c
+In file included from markdown.c:42:
+html_blocks.h: In function 'hash_block_tag':
+html_blocks.h:90:1: warning: old-style function definition [-Wold-style-definition]
+   90 | hash_block_tag (str, len)
+      | ^~~~~~~~~~~~~~
+html_blocks.h: In function 'find_block_tag':
+html_blocks.h:144:1: warning: old-style function definition [-Wold-style-definition]
+  144 | find_block_tag (str, len)
+      | ^~~~~~~~~~~~~~
+In file included from C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/assume.h:29,
+                 from C:/Ruby40-x64/include/ruby-4.0.0/ruby/backward/2/assume.h:24,
+                 from C:/Ruby40-x64/include/ruby-4.0.0/ruby/defines.h:72,
+                 from C:/Ruby40-x64/include/ruby-4.0.0/ruby/ruby.h:25,
+                 from C:/Ruby40-x64/include/ruby-4.0.0/ruby.h:38,
+                 from redcarpet.h:5,
+                 from rc_markdown.c:16:
+rc_markdown.c: In function 'rb_redcarpet_md__new':
+rc_markdown.c:88:41: warning: 'rb_data_object_get_warning' is deprecated: by TypedData [-Wdeprecated-declarations]
+   88 |         Data_Get_Struct(rb_rndr, struct rb_redcarpet_rndr, rndr);
+      |                                         ^~~~~~~~~~~~~~~~~
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/cast.h:31:29: note: in definition of macro 'RBIMPL_CAST'
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rc_markdown.c:88:9: note: in expansion of macro 'Data_Get_Struct'
+   88 |         Data_Get_Struct(rb_rndr, struct rb_redcarpet_rndr, rndr);
+      |         ^~~~~~~~~~~~~~~
+In file included from C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/core.h:27,
+                 from C:/Ruby40-x64/include/ruby-4.0.0/ruby/ruby.h:29:
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/core/rdata.h:328:1: note: declared here
+  328 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rc_markdown.c:94:9: warning: 'rb_data_object_wrap_warning' is deprecated: by TypedData [-Wdeprecated-declarations]
+   94 |         rb_markdown = Data_Wrap_Struct(klass, NULL, rb_redcarpet_md__free, markdown);
+      |         ^~~~~~~~~~~
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/core/rdata.h:296:1: note: declared here
+  296 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+rc_markdown.c: In function 'rb_redcarpet_md_render':
+rc_markdown.c:109:38: warning: 'rb_data_object_get_warning' is deprecated: by TypedData [-Wdeprecated-declarations]
+  109 |         Data_Get_Struct(self, struct sd_markdown, markdown);
+      |                                      ^~~~~~~~~~~
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/cast.h:31:29: note: in definition of macro 'RBIMPL_CAST'
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rc_markdown.c:109:9: note: in expansion of macro 'Data_Get_Struct'
+  109 |         Data_Get_Struct(self, struct sd_markdown, markdown);
+      |         ^~~~~~~~~~~~~~~
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/core/rdata.h:328:1: note: declared here
+  328 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rc_markdown.c:119:49: warning: 'rb_data_object_get_warning' is deprecated: by TypedData [-Wdeprecated-declarations]
+  119 |                 Data_Get_Struct(rb_rndr, struct rb_redcarpet_rndr, renderer);
+      |                                                 ^~~~~~~~~~~~~~~~~
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/cast.h:31:29: note: in definition of macro 'RBIMPL_CAST'
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rc_markdown.c:119:17: note: in expansion of macro 'Data_Get_Struct'
+  119 |                 Data_Get_Struct(rb_rndr, struct rb_redcarpet_rndr, renderer);
+      |                 ^~~~~~~~~~~~~~~
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/core/rdata.h:328:1: note: declared here
+  328 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/assume.h:29,
+                 from C:/Ruby40-x64/include/ruby-4.0.0/ruby/backward/2/assume.h:24,
+                 from C:/Ruby40-x64/include/ruby-4.0.0/ruby/defines.h:72,
+                 from C:/Ruby40-x64/include/ruby-4.0.0/ruby/ruby.h:25,
+                 from C:/Ruby40-x64/include/ruby-4.0.0/ruby.h:38,
+                 from redcarpet.h:5,
+                 from rc_render.c:17:
+rc_render.c: In function 'rndr_link_attributes':
+rc_render.c:259:43: warning: 'rb_data_object_get_warning' is deprecated: by TypedData [-Wdeprecated-declarations]
+  259 |         Data_Get_Struct(opt->self, struct rb_redcarpet_rndr, rndr);
+      |                                           ^~~~~~~~~~~~~~~~~
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/cast.h:31:29: note: in definition of macro 'RBIMPL_CAST'
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rc_render.c:259:9: note: in expansion of macro 'Data_Get_Struct'
+  259 |         Data_Get_Struct(opt->self, struct rb_redcarpet_rndr, rndr);
+      |         ^~~~~~~~~~~~~~~
+In file included from C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/core.h:27,
+                 from C:/Ruby40-x64/include/ruby-4.0.0/ruby/ruby.h:29:
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/core/rdata.h:328:1: note: declared here
+  328 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rc_render.c: In function 'rb_redcarpet_rbase_alloc':
+rc_render.c:342:9: warning: 'rb_data_object_wrap_warning' is deprecated: by TypedData [-Wdeprecated-declarations]
+  342 |         return Data_Wrap_Struct(klass, rb_redcarpet_rbase_mark, NULL, rndr);
+      |         ^~~~~~
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/core/rdata.h:296:1: note: declared here
+  296 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+rc_render.c: In function 'rb_redcarpet__overload':
+rc_render.c:349:38: warning: 'rb_data_object_get_warning' is deprecated: by TypedData [-Wdeprecated-declarations]
+  349 |         Data_Get_Struct(self, struct rb_redcarpet_rndr, rndr);
+      |                                      ^~~~~~~~~~~~~~~~~
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/cast.h:31:29: note: in definition of macro 'RBIMPL_CAST'
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rc_render.c:349:9: note: in expansion of macro 'Data_Get_Struct'
+  349 |         Data_Get_Struct(self, struct rb_redcarpet_rndr, rndr);
+      |         ^~~~~~~~~~~~~~~
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/core/rdata.h:328:1: note: declared here
+  328 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rc_render.c: In function 'rb_redcarpet_html_init':
+rc_render.c:382:38: warning: 'rb_data_object_get_warning' is deprecated: by TypedData [-Wdeprecated-declarations]
+  382 |         Data_Get_Struct(self, struct rb_redcarpet_rndr, rndr);
+      |                                      ^~~~~~~~~~~~~~~~~
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/cast.h:31:29: note: in definition of macro 'RBIMPL_CAST'
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rc_render.c:382:9: note: in expansion of macro 'Data_Get_Struct'
+  382 |         Data_Get_Struct(self, struct rb_redcarpet_rndr, rndr);
+      |         ^~~~~~~~~~~~~~~
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/core/rdata.h:328:1: note: declared here
+  328 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rc_render.c: In function 'rb_redcarpet_htmltoc_init':
+rc_render.c:441:38: warning: 'rb_data_object_get_warning' is deprecated: by TypedData [-Wdeprecated-declarations]
+  441 |         Data_Get_Struct(self, struct rb_redcarpet_rndr, rndr);
+      |                                      ^~~~~~~~~~~~~~~~~
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/cast.h:31:29: note: in definition of macro 'RBIMPL_CAST'
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rc_render.c:441:9: note: in expansion of macro 'Data_Get_Struct'
+  441 |         Data_Get_Struct(self, struct rb_redcarpet_rndr, rndr);
+      |         ^~~~~~~~~~~~~~~
+C:/Ruby40-x64/include/ruby-4.0.0/ruby/internal/core/rdata.h:328:1: note: declared here
+  328 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+linking shared-object redcarpet.so
+
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/redcarpet-2.3.0/ext/redcarpet
+make -j21 DESTDIR\= sitearchdir\=./.gem.20260615-31556-akzkmu sitelibdir\=./.gem.20260615-31556-akzkmu install
+/usr/bin/install -c -m 0755 redcarpet.so ./.gem.20260615-31556-akzkmu
+
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/redcarpet-2.3.0/ext/redcarpet
+make DESTDIR\= sitearchdir\=./.gem.20260615-31556-akzkmu sitelibdir\=./.gem.20260615-31556-akzkmu clean

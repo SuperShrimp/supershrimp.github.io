@@ -1,0 +1,49 @@
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/rdiscount-2.1.7/ext
+C:/Ruby40-x64/bin/ruby.exe extconf.rb
+checking for random()... no
+checking for srandom()... no
+checking for rand()... yes
+checking for srand()... yes
+checking size of unsigned long... 4
+checking size of unsigned int... 4
+creating Makefile
+
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/rdiscount-2.1.7/ext
+make -j21 DESTDIR\= sitearchdir\=./.gem.20260615-30688-ievqww sitelibdir\=./.gem.20260615-30688-ievqww clean
+
+current directory: D:/Github/supershrimp.github.io/vendor/bundle/ruby/4.0.0/gems/rdiscount-2.1.7/ext
+make -j21 DESTDIR\= sitearchdir\=./.gem.20260615-30688-ievqww sitelibdir\=./.gem.20260615-30688-ievqww
+generating rdiscount-x64-mingw-ucrt.def
+compiling Csio.c
+compiling amalloc.c
+compiling basename.c
+compiling css.c
+compiling docheader.c
+compiling dumptree.c
+compiling emmatch.c
+compiling flags.c
+compiling generate.c
+compiling github_flavoured.c
+compiling html5.c
+generate.c: In function 'p_or_nothing':
+generate.c:602:1: warning: old-style function definition [-Wold-style-definition]
+  602 | p_or_nothing(p)
+      | ^~~~~~~~~~~~
+compiling markdown.c
+compiling mkdio.c
+compiling mktags.c
+compiling pgm_options.c
+mktags.c:44:1: error: return type defaults to 'int' [-Wimplicit-int]
+   44 | main()
+      | ^~~~
+compiling rdiscount.c
+make: *** [Makefile:250: mktags.o] エラー 1
+make: *** 未完了のジョブを待っています....
+compiling resource.c
+rdiscount.c: In function 'rb_rdiscount_to_html':
+rdiscount.c:50:17: error: implicit declaration of function 'rb_rdiscount__get_flags' [-Wimplicit-function-declaration]
+   50 |     int flags = rb_rdiscount__get_flags(self);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Makefile:250: rdiscount.o] エラー 1
+
+make failed, exit code 2

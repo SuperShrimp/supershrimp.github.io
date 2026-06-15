@@ -179,6 +179,7 @@ exclude:
   - CHANGELOG
   - Capfile
   - config
+  - docs/superpowers
   - Dockerfile
   - Gemfile
   - Gruntfile.js

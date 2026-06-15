@@ -1,0 +1,63 @@
+/* ==========================================================================
+   PUBLICATIONS
+   ========================================================================== */
+
+.publication-list__item {
+  margin: 0 0 1.35rem;
+}
+
+.publication-item {
+  font-size: $type-size-6;
+  line-height: 1.45;
+}
+
+.publication-item__title {
+  margin: 0 0 0.25rem;
+  font-family: $global-font-family;
+  font-size: $type-size-5;
+  line-height: 1.35;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.publication-item__badge {
+  display: inline-block;
+  margin-right: 0.35rem;
+  padding: 0.08rem 0.35rem;
+  border-radius: 3px;
+  background-color: var(--global-link-color);
+  color: var(--global-bg-color);
+  font-size: 0.72em;
+  font-weight: 700;
+  line-height: 1.35;
+  vertical-align: 0.08em;
+}
+
+.publication-item__authors,
+.publication-item__venue,
+.publication-item__links {
+  margin: 0.2rem 0 0;
+}
+
+.publication-item__authors {
+  color: var(--global-text-color);
+}
+
+.publication-item__venue {
+  color: var(--global-text-color-light);
+
+  &::before {
+    content: "- ";
+  }
+}
+
+.publication-item__links {
+  font-size: 0.9em;
+
+  a {
+    margin-right: 0.6rem;
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,37 @@
+{% include base_path %}
+
+{% assign publication_year = post.year %}
+{% if publication_year == nil and post.date %}
+  {% assign publication_year = post.date | date: "%Y" %}
+{% endif %}
+
+<div class="publication-list__item">
+  <article class="publication-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+    <h2 class="publication-item__title" itemprop="headline">
+      {% if post.venue_tag %}
+        <span class="publication-item__badge">{{ post.venue_tag }}</span>
+      {% endif %}
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+    </h2>
+
+    {% if post.authors %}
+      <p class="publication-item__authors" itemprop="author">{{ post.authors }}</p>
+    {% endif %}
+
+    {% if post.venue or publication_year or post.rank %}
+      <p class="publication-item__venue">
+        {% if post.venue %}{{ post.venue }}{% endif %}{% if publication_year %} ({{ publication_year }}){% endif %}{% if post.rank %}, {{ post.rank }}{% endif %}
+      </p>
+    {% endif %}
+
+    {% if post.paperurl or post.codeurl or post.projecturl or post.bibtexurl or post.scholarurl %}
+      <p class="publication-item__links">
+        {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
+        {% if post.codeurl %}<a href="{{ post.codeurl }}">Code</a>{% endif %}
+        {% if post.projecturl %}<a href="{{ post.projecturl }}">Project</a>{% endif %}
+        {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}">BibTeX</a>{% endif %}
+        {% if post.scholarurl %}<a href="{{ post.scholarurl }}">Google Scholar</a>{% endif %}
+      </p>
+    {% endif %}
+  </article>
+</div>

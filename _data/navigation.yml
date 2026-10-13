@@ -4,16 +4,17 @@
 # links. Removing a link prevents it from showing in the header, but does not
 # prevent it from being included in the site.
 #
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
+# All content now lives on the home page; these links jump to its sections.
 
 main:
+  - title: "News"
+    url: /#news
+
   - title: "Publications"
-    url: /publications/
-    
-  # - title: "Portfolio"
-  #   url: /portfolio/
-        
-  - title: "CV"
-    url: /cv/
-    
+    url: /#publications
+
+  - title: "Education"
+    url: /#education
+
+  - title: "Experience"
+    url: /#work-experience

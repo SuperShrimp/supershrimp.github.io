@@ -13,7 +13,7 @@ body {
   background-color: var(--global-bg-color);
 
   margin: 0;
-  padding: $masthead-height 0 0;
+  padding: 1em 0 0;
   padding-bottom: 9em;
   font-family: $global-font-family;
   line-height: 1.5;
@@ -354,7 +354,7 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
    ========================================================================== */
 
    @media print {
-    .masthead,
+    .side-nav,
     .toc,
     .page__share,
     .page__related,

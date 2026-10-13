@@ -1,81 +1,101 @@
 /* ==========================================================================
-   MASTHEAD
+   SIDE NAVIGATION
+   Collapsed tab on the right edge; expands on hover, focus, or tap.
    ========================================================================== */
 
-.masthead {
+.side-nav {
   position: fixed;
-  background: var(--global-bg-color);
-  height: fit-content;
-  top: 0;
-  width: 100%;
-
-  -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
+  top: 1.25rem;
+  right: 0;
   z-index: 20;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 1px;
-    background: var(--global-border-color);
-    width: 100%;
-  }
-
-  &__inner-wrap {
-    @include container;
-    @include clearfix;
-    padding: 0.5em 1em;
-    font-family: $sans-serif-narrow;
-
-    @include breakpoint($x-large) {
-      max-width: $x-large;
-    }
-
-    nav {
-      z-index: 10;
-    }
-
-    a {
-      text-decoration: none;
-    }
-  }
-}
-
-.masthead__menu {
+  display: flex;
+  align-items: flex-start;
+  font-family: $sans-serif-narrow;
 
   ul {
     margin: 0;
-    padding: 0;
-    clear: both;
     list-style-type: none;
   }
-}
 
-.masthead__menu-item {
-  background-color: var(--global-bg-color);
-  display: block;
-  list-style-type: none;
-  white-space: nowrap;
-
-  &--lg {
-    padding-right: 2em;
-    font-weight: 700;
+  a {
+    text-decoration: none;
   }
 }
 
-.masthead__menu-item.selected a {
+.side-nav__handle {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 1px solid var(--global-border-color);
+  border-right: 0;
+  border-radius: $border-radius 0 0 $border-radius;
+  background: var(--global-bg-color);
   color: var(--global-text-color);
-  font-weight: 700;
-  border-bottom: 2px solid var(--global-text-color);
-  pointer-events: none; /* Move this here */
-  cursor: default; /* Move this here too */
+  font-size: $type-size-5;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(#000, 0.12);
+  transition: opacity 0.2s ease-in-out;
 }
 
-.masthead__menu-item.selected a:hover {
-  color: var(--global-text-color);
-  border-bottom: 2px solid var(--global-text-color);
-  /* No need to repeat pointer-events and cursor here */
+.side-nav__panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 11rem;
+  padding: 0.5rem 0;
+  border: 1px solid var(--global-border-color);
+  border-right: 0;
+  border-radius: $border-radius 0 0 $border-radius;
+  background: var(--global-bg-color);
+  box-shadow: 0 2px 12px rgba(#000, 0.18);
+
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out, visibility 0s linear 0.2s;
+}
+
+.side-nav:hover,
+.side-nav:focus-within,
+.side-nav.is-open {
+  .side-nav__handle {
+    opacity: 0;
+  }
+
+  .side-nav__panel {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out, visibility 0s;
+  }
+}
+
+.side-nav__item {
+  a {
+    display: block;
+    padding: 0.4rem 1.25rem;
+    color: var(--global-masthead-link-color);
+    font-size: $type-size-5;
+    white-space: nowrap;
+
+    &:hover,
+    &:focus {
+      color: var(--global-masthead-link-color-hover);
+      background: var(--global-border-color);
+    }
+  }
+
+  &--title a {
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+  }
+
+  &--theme {
+    margin-top: 0.25rem;
+    border-top: 1px solid var(--global-border-color);
+
+    a {
+      cursor: pointer;
+    }
+  }
 }

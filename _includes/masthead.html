@@ -1,29 +1,45 @@
 {% include base_path %}
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><span class="navicon"></span></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
-            <a href="{{ base_path }}/">{{ site.title }}</a>
-          </li>
-          {% for link in site.data.navigation.main %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-            {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-            <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
-              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
-            </li>
-          {% endfor %}
-          <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
-          </li>
-        </ul>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
-    </div>
-  </div>
-</div>
+<nav class="side-nav" aria-label="Site">
+  <button class="side-nav__handle" type="button" aria-expanded="false" aria-controls="side-nav-panel" title="Menu">
+    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    <span class="screen-reader-text">Menu</span>
+  </button>
+  <ul id="side-nav-panel" class="side-nav__panel">
+    <li class="side-nav__item side-nav__item--title">
+      <a href="{{ base_path }}/">{{ site.title }}</a>
+    </li>
+    {% for link in site.data.navigation.main %}
+      {% if link.url contains 'http' %}
+        {% assign domain = '' %}
+      {% else %}
+        {% assign domain = base_path %}
+      {% endif %}
+      <li class="side-nav__item">
+        <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+      </li>
+    {% endfor %}
+    <li id="theme-toggle" class="side-nav__item side-nav__item--theme">
+      <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+    </li>
+  </ul>
+</nav>
+<script>
+  // Hover opens the menu via CSS; this adds tap-to-toggle for touch screens.
+  (function () {
+    var nav = document.querySelector('.side-nav');
+    var handle = nav.querySelector('.side-nav__handle');
+    function setOpen(open) {
+      nav.classList.toggle('is-open', open);
+      handle.setAttribute('aria-expanded', open);
+    }
+    handle.addEventListener('click', function () {
+      setOpen(!nav.classList.contains('is-open'));
+    });
+    nav.querySelectorAll('.side-nav__item:not(.side-nav__item--theme) a').forEach(function (a) {
+      a.addEventListener('click', function () { setOpen(false); });
+    });
+    document.addEventListener('click', function (e) {
+      if (!nav.contains(e.target)) setOpen(false);
+    });
+  })();
+</script>

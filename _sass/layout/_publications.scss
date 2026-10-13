@@ -35,9 +35,10 @@
   vertical-align: 0.08em;
 }
 
-.publication-item__authors,
-.publication-item__venue,
-.publication-item__links {
+/* scoped under .publication-item so it also wins over .page__content p on the home page */
+.publication-item .publication-item__authors,
+.publication-item .publication-item__venue,
+.publication-item .publication-item__links {
   margin: 0.2rem 0 0;
 }
 

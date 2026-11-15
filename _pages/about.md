@@ -9,12 +9,13 @@ redirect_from:
 
 {% include base_path %}
 
-I am a 1st year doctoral student of Miyazaki Lab, Institute of Science Tokyo.  Before joining Miyazaki Lab, I obtained my bachelor degree in Dalian University of Technology, supervised by Prof. Weimin Wang. My research has been focusing on the large-scale point cloud processing algorithm acceleration with GPU & CPU.
+I am a 2nd year doctoral student of [Miyazaki Lab](https://www.lsc.comp.isct.ac.jp/), Institute of Science Tokyo. Before joining Miyazaki Lab, I obtained my bachelor degree in Dalian University of Technology, supervised by [Prof. Weimin Wang](https://wei-min.wang/). My research has been focusing on the large-scale point cloud processing algorithm acceleration with GPU & CPU.
 
 
 News
 ----
 
+2026.10 Present our work on NDBC 2026.  
 2026.3 Present our work on DEIM 2026.  
 2025.5 One paper accepted by ICIP 2025.  
 2025.3 Present our current work on DEIM 2025.  
@@ -44,9 +45,13 @@ Work Experience
 ----
 
 * Oct 2025 - Present: Research Assistant
-  * Institute of Science Tokyo, Japan
+  * Miyazaki Lab , Institute of Science Tokyo, Japan
   * Duties included: Tagging issues
   * Supervisor: Jun Miyazaki
+
+* Jun 2026 - Dec 2026: Learning Asistant
+  * OCRD, Institute of Science Tokyo, Japan
+  * Duties included: Architecture design of AI TA with openclaw, RAG and slack. 
 
 * Aug 2024 - Oct 2024: Research Intern
   * Secom IS Lab, Japan

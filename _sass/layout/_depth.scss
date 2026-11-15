@@ -1,0 +1,125 @@
+/* ==========================================================================
+   DEPTH
+   Purely visual layer: soft background, elevated cards, layered shadows.
+   No markup changes; delete this file's import to revert.
+   ========================================================================== */
+
+:root {
+  --depth-page-bg      : linear-gradient(180deg, #f5f9fb 0%, #edf2f5 100%);
+  --depth-card-bg      : #ffffff;
+  --depth-card-border  : rgba(16, 42, 52, 0.07);
+  --depth-accent       : #2f7f93;
+  --depth-accent-light : #5bbad6;
+  --depth-shadow-sm    : 0 1px 2px rgba(16, 42, 52, 0.05), 0 2px 6px rgba(16, 42, 52, 0.06);
+  --depth-shadow-md    : 0 2px 4px rgba(16, 42, 52, 0.05), 0 8px 22px rgba(16, 42, 52, 0.09);
+  --depth-shadow-lg    : 0 4px 10px rgba(16, 42, 52, 0.07), 0 18px 40px rgba(16, 42, 52, 0.14);
+}
+
+html[data-theme="dark"] {
+  --depth-page-bg      : linear-gradient(180deg, #424242 0%, #363636 100%);
+  --depth-card-bg      : #4e4e4e;
+  --depth-card-border  : rgba(255, 255, 255, 0.06);
+  --depth-accent       : #0ea1c5;
+  --depth-accent-light : #5cc8e2;
+  --depth-shadow-sm    : 0 1px 2px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.2);
+  --depth-shadow-md    : 0 2px 4px rgba(0, 0, 0, 0.25), 0 8px 22px rgba(0, 0, 0, 0.3);
+  --depth-shadow-lg    : 0 4px 10px rgba(0, 0, 0, 0.3), 0 18px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Page background: a faint gradient so white cards can sit above it */
+body {
+  background: var(--depth-page-bg);
+  background-attachment: fixed;
+}
+
+/* Section headings: short accent bar sitting on the existing rule */
+.page__content h2 {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 2.75rem;
+    height: 3px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--depth-accent), var(--depth-accent-light));
+    box-shadow: 0 1px 4px rgba(47, 127, 147, 0.35);
+  }
+}
+
+/* Avatar: lifted off the page with a ring and a soft drop shadow */
+.author__avatar img {
+  background: var(--depth-card-bg);
+  box-shadow: var(--depth-shadow-md);
+}
+
+/* Publications: each entry becomes a raised card */
+.publication-item {
+  padding: 1rem 1.25rem 0.9rem;
+  border: 1px solid var(--depth-card-border);
+  border-left: 3px solid var(--depth-accent);
+  border-radius: 10px;
+  background: var(--depth-card-bg);
+  box-shadow: var(--depth-shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--depth-shadow-lg);
+  }
+}
+
+.publication-item__badge {
+  background: linear-gradient(135deg, var(--depth-accent-light), var(--depth-accent));
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(16, 42, 52, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+/* Paper / Code links: small raised pills */
+.publication-item .publication-item__links {
+  margin-top: 0.55rem;
+}
+
+.publication-item__links a {
+  display: inline-block;
+  margin: 0 0.4rem 0.2rem 0;
+  padding: 0.1rem 0.75rem;
+  border: 1px solid var(--depth-card-border);
+  border-radius: 999px;
+  background: var(--depth-card-bg);
+  box-shadow: var(--depth-shadow-sm);
+  font-size: 0.9em;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-1px);
+    box-shadow: var(--depth-shadow-md);
+    color: var(--global-link-color-hover);
+  }
+}
+
+html[data-theme="dark"] .publication-item__links a {
+  color: var(--depth-accent-light);
+}
+
+/* Side-nav handle and panel: a touch more elevation */
+.side-nav__handle {
+  box-shadow: var(--depth-shadow-md);
+}
+
+.side-nav__panel {
+  box-shadow: var(--depth-shadow-lg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .publication-item,
+  .publication-item:hover,
+  .publication-item__links a:hover {
+    transform: none;
+    transition: none;
+  }
+}
